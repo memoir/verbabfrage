@@ -91,3 +91,18 @@ updateSectionVisibility();
 
 // Initial update to arrays
 updateOptionArrays();
+
+// Modal open/close logic
+const gear = document.getElementById('settings-gear');
+const modal = document.getElementById('settings-modal');
+const closeBtn = document.getElementById('settings-modal-close');
+gear.addEventListener('click', (e) => {
+    e.stopPropagation();
+    modal.style.display = 'block';
+});
+closeBtn.addEventListener('click', (e) => {
+    modal.style.display = 'none';
+});
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.style.display = 'none';
+});
