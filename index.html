@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Verbformen</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 60px 1fr; /* Add a 60px column for titles */
+            grid-template-rows: repeat(6, 1fr);
+            height: 100vh;
+        }
+        .grid-title {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2vh;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg); /* Rotate 90° counterclockwise */
+            background-color: #f0f0f0;
+        }
+        .grid-item {
+            border: 1px solid black; /* Optional: for visual clarity */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14vh;
+        }
+        #verb, #verb-title {
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+        /* Gear icon styles */
+        #settings-gear {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            font-size: 2.2em;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 1001;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        }
+        /* Modal styles */
+        #settings-modal {
+            display: none;
+            position: fixed;
+            z-index: 1002;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.3);
+        }
+        #settings-modal-content {
+            background: #fff;
+            margin: 10vh auto;
+            padding: 2em;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        #settings-modal-close {
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            font-size: 1.5em;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        /* Row container for both title and content */
+        .row-container {
+            display: contents; /* This allows the children to be direct children of grid-container */
+        }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="row-container" id="row-verb">
+        <div class="grid-title" id="verb-title">Verb</div>
+        <div class="grid-item" id="verb">Verb</div>
+    </div>
+    <div class="row-container" id="row-person">
+        <div class="grid-title" id="person-title">Person</div>
+        <div class="grid-item" id="person" data-section="person">Person</div>
+    </div>
+    <div class="row-container" id="row-numerus">
+        <div class="grid-title" id="numerus-title">Numerus</div>
+        <div class="grid-item" id="numerus" data-section="numerus">Numerus</div>
+    </div>
+    <div class="row-container" id="row-tempus">
+        <div class="grid-title" id="tempus-title">Tempus</div>
+        <div class="grid-item" id="tempus" data-section="tempus">Tempus</div>
+    </div>
+    <div class="row-container" id="row-genus">
+        <div class="grid-title" id="genus-title">Genus verbi</div>
+        <div class="grid-item" id="genus" data-section="genus">Genus verbi</div>
+    </div>
+    <div class="row-container" id="row-modus">
+        <div class="grid-title" id="modus-title">Modus</div>
+        <div class="grid-item" id="modus" data-section="modus">Modus</div>
+    </div>
+</div>
+<!-- Gear icon -->
+<div id="settings-gear" title="Einstellungen">⚙</div>
+<!-- Modal window -->
+<div id="settings-modal">
+    <div id="settings-modal-content">
+        <button id="settings-modal-close" title="Schließen">&times;</button>
+        <h2>Einstellungen</h2>
+        <form id="settings-form">
+            <div>
+                <label>
+                    <input type="checkbox" id="person-all" checked>
+                    <strong>Person</strong>
+                </label>
+                <div style="margin-left:1.5em;">
+                    <label><input type="checkbox" class="person-item" checked>1. Person</label><br>
+                    <label><input type="checkbox" class="person-item" checked>2. Person</label><br>
+                    <label><input type="checkbox" class="person-item" checked>3. Person</label>
+                </div>
+            </div>
+            <div style="margin-top:1em;">
+                <label>
+                    <input type="checkbox" id="numerus-all" checked>
+                    <strong>Numerus</strong>
+                </label>
+                <div style="margin-left:1.5em;">
+                    <label><input type="checkbox" class="numerus-item" checked>Singular</label><br>
+                    <label><input type="checkbox" class="numerus-item" checked>Plural</label>
+                </div>
+            </div>
+            <div style="margin-top:1em;">
+                <label>
+                    <input type="checkbox" id="tempus-all" checked>
+                    <strong>Tempus</strong>
+                </label>
+                <div style="margin-left:1.5em;">
+                    <label><input type="checkbox" class="tempus-item" checked>Präsens</label><br>
+                    <label><input type="checkbox" class="tempus-item" checked>Präteritum</label><br>
+                    <label><input type="checkbox" class="tempus-item" checked>Perfekt</label><br>
+                    <label><input type="checkbox" class="tempus-item" checked>Plusquamperfekt</label><br>
+                    <label><input type="checkbox" class="tempus-item" checked>Futur I</label><br>
+                    <label><input type="checkbox" class="tempus-item" checked>Futur II</label>
+                </div>
+            </div>
+            <div style="margin-top:1em;">
+                <label>
+                    <input type="checkbox" id="genus-all" checked>
+                    <strong>Genus verbi</strong>
+                </label>
+                <div style="margin-left:1.5em;">
+                    <label><input type="checkbox" class="genus-item" checked>Aktiv</label><br>
+                    <label><input type="checkbox" class="genus-item" checked>Passiv</label>
+                </div>
+            </div>
+            <div style="margin-top:1em;">
+                <label>
+                    <input type="checkbox" id="modus-all" checked>
+                    <strong>Modus</strong>
+                </label>
+                <div style="margin-left:1.5em;">
+                    <label><input type="checkbox" class="modus-item" checked>Indikativ</label><br>
+                    <label><input type="checkbox" class="modus-item" checked>Konjunktiv I</label><br>
+                    <label><input type="checkbox" class="modus-item" checked>Konjunktiv II</label><br>
+                    <label><input type="checkbox" class="modus-item" checked>Imperativ</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+<script>
+    // Modal open/close logic
+    const gear = document.getElementById('settings-gear');
+    const modal = document.getElementById('settings-modal');
+    const closeBtn = document.getElementById('settings-modal-close');
+    gear.addEventListener('click', (e) => {
+        e.stopPropagation();
+        modal.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', (e) => {
+        modal.style.display = 'none';
+    });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.style.display = 'none';
+    });
+</script>
+</body>
+</html>
