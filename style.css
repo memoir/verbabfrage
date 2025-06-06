@@ -1,13 +1,19 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: 60px 1fr; /* Add a 60px column for titles */
-    grid-template-rows: repeat(6, 1fr);
-    height: 100vh;
+    grid-template-columns: 60px 1fr;
+    /* Use auto-fit for rows so they adjust automatically when rows are added/removed */
+    grid-auto-rows: 1fr;
+    height: calc(100vh - 24px);
+    min-height: 0; /* Important for Firefox */
+    box-sizing: border-box;
 }
+
 .grid-title {
     border: 1px solid black;
     display: flex;
@@ -19,19 +25,41 @@ html, body {
     transform: rotate(180deg); /* Rotate 90° counterclockwise */
     background-color: #f0f0f0;
 }
+
 .grid-item {
     border: 1px solid black; /* Optional: for visual clarity */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14vh;
+    font-size: 12vh; /* Reduced from 14vh to ensure descenders are visible */
+    height: 100%; /* Ensure each item takes full height of its row */
+    box-sizing: border-box; /* Include padding and border in the height calculation */
+    padding: 0.5vh; /* Add some padding to prevent text from touching borders */
+    overflow: hidden; /* Prevent text from overflowing the container */
 }
-#verb, #verb-title {
-    font-weight: bold;
-    background-color: black;
+
+/* Solution Row Styling */
+#solution, #solution-title {
+    background-color: #4CAF50;
     color: white;
+    font-weight: bold;
 }
+
+#solution {
+    cursor: pointer;
+    font-size: 8vh; /* Reduced from 10vh to ensure descenders are visible */
+    /* Ensure the solution element takes up full height */
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 0; /* Important for Firefox */
+    line-height: 1.2; /* Improve line spacing */
+}
+
+#solution.hidden-solution {
+    color: rgba(255, 255, 255, 0);
+}
+
 /* Gear icon styles */
 #settings-gear {
     position: fixed;
@@ -80,10 +108,6 @@ html, body {
     border: none;
     cursor: pointer;
 }
-/* Row container for both title and content */
-.row-container {
-    display: contents; /* This allows the children to be direct children of grid-container */
-}
 
 footer {
     position: fixed;
@@ -92,7 +116,43 @@ footer {
     text-align: center;
     font-size: 0.8em;
     color: #777;
-    padding: 5px 0;
+    padding: 4px 0;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 1000;
+    height: 16px; /* Fixed height */
+    line-height: 16px; /* Center text vertically */
+}
+
+/* Row container for both title and content */
+.row-container {
+    display: contents;
+    height: auto; /* Let the grid control the height */
+}
+
+/* Ensure all grid rows take their full space */
+#row-verb, #row-person, #row-numerus, #row-tempus, #row-genus, #row-modus, #row-solution {
+    min-height: 0; /* Important for Firefox */
+}
+
+/* Make verb row visually distinct */
+#verb, #verb-title {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+/* Increase the size of the verb to make it more prominent, but ensure descenders are visible */
+#verb {
+    font-size: 14vh; /* Reduced from 15vh to ensure descenders are visible */
+    padding-bottom: 1.5vh; /* Add extra padding at bottom for descenders */
+    line-height: 0.95; /* Tighten line-height slightly to make room for descenders */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+/* Add a special border to the verb row */
+#row-verb .grid-item, #row-verb .grid-title {
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
