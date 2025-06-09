@@ -1,3 +1,8 @@
+// Task history and navigation variables
+let taskHistory = [];
+let currentTaskIndex = -1;
+const maxHistorySize = 50; // Maximum number of tasks to store in history
+
 // Default verb array in case the JSON file fails to load
 const defaultVerbs = ['anbieten', 'anfangen', 'ankommen'];
 
@@ -5,8 +10,48 @@ const defaultVerbs = ['anbieten', 'anfangen', 'ankommen'];
 let verbs = [...defaultVerbs]; // Will contain just the infinitive forms
 let verbsData = []; // Will contain the full conjugation data
 
-// Load verbs from JSON file
+// Store original arrays for restoring order
+const originalPersons = ['1. Person', '2. Person', '3. Person'];
+const originalNumeri = ['Singular', 'Plural'];
+const originalTempora = ['Präsens', 'Präteritum', 'Perfekt', 'Plusquamperfekt', 'Futur I', 'Futur II'];
+const originalGenera = ['Aktiv', 'Passiv'];
+const originalModi = ['Indikativ', 'Konjunktiv I', 'Konjunktiv II']; // Removed 'Imperativ'
+
+// Options object for easier reference
+const options = {
+    person: [...originalPersons],
+    numerus: [...originalNumeri],
+    tempus: [...originalTempora],
+    genus: [...originalGenera],
+    modus: [...originalModi]
+};
+
+// Use these arrays in the random selection logic
+let persons = [...originalPersons];
+let numeri = [...originalNumeri];
+let tempora = [...originalTempora];
+let genera = [...originalGenera];
+let modi = [...originalModi];
+
+// Map heading checkbox IDs to section names
+const sectionMap = {
+    'person-all': 'person',
+    'numerus-all': 'numerus',
+    'tempus-all': 'tempus',
+    'genus-all': 'genus',
+    'modus-all': 'modus'
+};
+
+// Solution display logic
+let currentSolution = "";
+let solutionVisible = false;
+
+// Initialize the modal variables at the top level for global access
+let gear, modal, closeBtn, prevButton, nextButton;
+
+// Main initialization function to set up event handlers
 document.addEventListener('DOMContentLoaded', () => {
+    // Load verbs from JSON
     fetch('verbs.json')
         .then(response => {
             if (!response.ok) {
@@ -33,46 +78,266 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn('Failed to load verbs.json:', error);
             console.log('Using default verbs instead.');
         });
+
+    // Initialize UI elements
+    gear = document.getElementById('settings-gear');
+    modal = document.getElementById('settings-modal');
+    closeBtn = document.getElementById('settings-modal-close');
+    prevButton = document.getElementById('prev-task');
+    nextButton = document.getElementById('next-task');
+    
+    // Set up click handlers for UI elements
+    setupClickHandlers();
+    
+    // Initial updates
+    updateSectionVisibility();
+    updateOptionArrays();
+    
+    // Initialize with a random task
+    generateRandomTask();
 });
 
-// Store original arrays for restoring order
-const originalPersons = ['1. Person', '2. Person', '3. Person'];
-const originalNumeri = ['Singular', 'Plural'];
-const originalTempora = ['Präsens', 'Präteritum', 'Perfekt', 'Plusquamperfekt', 'Futur I', 'Futur II'];
-const originalGenera = ['Aktiv', 'Passiv'];
-const originalModi = ['Indikativ', 'Konjunktiv I', 'Konjunktiv II']; // Removed 'Imperativ'
+// Function to set up all click handlers
+function setupClickHandlers() {
+    // Solution click handler
+    const solutionElement = document.getElementById('solution');
+    if (solutionElement) {
+        solutionElement.classList.add('hidden-solution');
+        solutionElement.addEventListener('click', (e) => {
+            e.stopPropagation();
+            solutionElement.classList.toggle('hidden-solution');
+        });
+    }
+    
+    // Modal open/close handlers
+    if (gear) {
+        gear.addEventListener('click', (e) => {
+            e.stopPropagation();
+            modal.style.display = 'block';
+        });
+    }
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
+    
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) modal.style.display = 'none';
+        });
+    }
+    
+    // Navigation button handlers
+    if (prevButton) {
+        prevButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showPreviousTask();
+            return false; // Prevent default and further propagation
+        });
+    }
+    
+    if (nextButton) {
+        nextButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showNextTask();
+            return false; // Prevent default and further propagation
+        });
+    }
+    
+    // "Select all" checkbox handlers
+    document.getElementById("person-all")?.addEventListener("change", function() {
+        document.querySelectorAll(".person-item").forEach(item => {
+            item.checked = this.checked;
+        });
+        updateOptionArrays();
+        updateSectionVisibility(); // Only top-level settings affect visibility
+    });
+    
+    document.getElementById("numerus-all")?.addEventListener("change", function() {
+        document.querySelectorAll(".numerus-item").forEach(item => {
+            item.checked = this.checked;
+        });
+        updateOptionArrays();
+        updateSectionVisibility(); // Only top-level settings affect visibility
+    });
+    
+    document.getElementById("tempus-all")?.addEventListener("change", function() {
+        document.querySelectorAll(".tempus-item").forEach(item => {
+            item.checked = this.checked;
+        });
+        updateOptionArrays();
+        updateSectionVisibility(); // Only top-level settings affect visibility
+    });
+    
+    document.getElementById("genus-all")?.addEventListener("change", function() {
+        document.querySelectorAll(".genus-item").forEach(item => {
+            item.checked = this.checked;
+        });
+        updateOptionArrays();
+        updateSectionVisibility(); // Only top-level settings affect visibility
+    });
+    
+    document.getElementById("modus-all")?.addEventListener("change", function() {
+        document.querySelectorAll(".modus-item").forEach(item => {
+            item.checked = this.checked;
+        });
+        updateOptionArrays();
+        updateSectionVisibility(); // Only top-level settings affect visibility
+    });
+    
+    // Individual item checkbox handlers - only update arrays, not visibility
+    document.querySelectorAll('.person-item, .numerus-item, .tempus-item, .genus-item, .modus-item')
+        .forEach(cb => {
+            cb.addEventListener('change', () => {
+                updateOptionArrays();
+                // Do NOT call updateSectionVisibility() here
+            });
+        });
+    
+    // Add event listeners to all item checkboxes for section visibility
+    document.querySelectorAll('.person-item, .numerus-item, .tempus-item, .genus-item, .modus-item')
+        .forEach(cb => {
+            cb.addEventListener('change', () => {
+                updateOptionArrays();
+                updateSectionVisibility(); // Add this line
+            });
+        });
+    
+    // Individual click handlers for grid items (except solution)
+    document.querySelectorAll(".grid-item").forEach(item => {
+        if (item.id !== "solution") {
+            item.addEventListener("click", function(e) {
+                e.stopPropagation(); // Prevent global click
+                generateRandomTask();
+            });
+        }
+    });
+    
+    // Global click handler to regenerate task
+    document.addEventListener('click', (e) => {
+        // Don't regenerate if clicking on special elements
+        if (e.target === modal || 
+            (modal && modal.contains(e.target)) || 
+            e.target === gear || 
+            e.target === document.getElementById('solution') ||
+            e.target === prevButton ||
+            e.target === nextButton ||
+            e.target.closest('.controls')) { // Exclude clicks on the controls container
+            return;
+        }
+        
+        // Don't regenerate if clicking on form elements
+        if (e.target.tagName === 'INPUT' || 
+            e.target.tagName === 'BUTTON' ||
+            e.target.tagName === 'LABEL' ||
+            e.target.tagName === 'SELECT') {
+            return;
+        }
+        
+        generateRandomTask();
+    });
+}
 
-// Use these arrays in the random selection logic
-let persons = [...originalPersons];
-let numeri = [...originalNumeri];
-let tempora = [...originalTempora];
-let genera = [...originalGenera];
-let modi = [...originalModi];
+// Function to navigate to previous task
+function showPreviousTask() {
+    if (currentTaskIndex > 0) {
+        currentTaskIndex--;
+        displayTaskFromHistory(taskHistory[currentTaskIndex]);
+        updateNavigationButtons();
+    }
+}
 
-// Map heading checkbox IDs to section names
-const sectionMap = {
-    'person-all': 'person',
-    'numerus-all': 'numerus',
-    'tempus-all': 'tempus',
-    'genus-all': 'genus',
-    'modus-all': 'modus'
-};
+// Function to navigate to next task
+function showNextTask() {
+    if (currentTaskIndex < taskHistory.length - 1) {
+        currentTaskIndex++;
+        displayTaskFromHistory(taskHistory[currentTaskIndex]);
+        updateNavigationButtons();
+    } else {
+        // If at the end of history, generate a new task
+        generateRandomTask();
+    }
+}
 
-// Solution display logic
-let currentSolution = "";
-let solutionVisible = false;
+// Function to display a task from history
+function displayTaskFromHistory(task) {
+    document.getElementById("verb").textContent = task.verb;
+    document.getElementById("person").textContent = task.person;
+    document.getElementById("numerus").textContent = task.numerus;
+    document.getElementById("tempus").textContent = task.tempus;
+    document.getElementById("genus").textContent = task.genus;
+    document.getElementById("modus").textContent = task.modus;
+    
+    const solutionElement = document.getElementById("solution");
+    if (solutionElement) {
+        solutionElement.innerText = task.solution;
+        solutionElement.classList.add('hidden-solution');
+    }
+}
+
+// Function to update navigation button states
+function updateNavigationButtons() {
+    if (prevButton) {
+        prevButton.disabled = currentTaskIndex <= 0;
+    }
+    
+    if (nextButton) {
+        nextButton.disabled = currentTaskIndex >= taskHistory.length - 1;
+    }
+}
+
+// Function to update section visibility based on TOP-LEVEL checkboxes only
+function updateSectionVisibility() {
+    const sections = ['person', 'numerus', 'tempus', 'genus', 'modus'];
+    
+    sections.forEach(section => {
+        const checkboxId = `${section}-all`;
+        const checkbox = document.getElementById(checkboxId);
+        
+        if (checkbox) {
+            const isVisible = checkbox.checked;
+            const rowContainer = document.getElementById(`row-${section}`);
+            
+            if (rowContainer) {
+                if (isVisible) {
+                    rowContainer.style.display = '';
+                } else {
+                    rowContainer.style.display = 'none';
+                }
+            }
+        }
+    });
+}
+
+// Function to get enabled options based on checkboxes
+function getEnabledOptions(category) {
+    const checkboxes = document.querySelectorAll(`.${category}-item:checked`);
+    return Array.from(checkboxes).map(checkbox => checkbox.nextSibling.textContent.trim());
+}
+
+// Utility to update an array based on checked checkboxes
+function updateArrayFromCheckboxes(selector, originalArray) {
+    const checkedLabels = Array.from(document.querySelectorAll(selector))
+        .filter(cb => cb.checked)
+        .map(cb => cb.nextSibling.textContent.trim());
+    // Keep original order
+    return originalArray.filter(item => checkedLabels.includes(item));
+}
+
+// Update arrays when any item checkbox changes
+function updateOptionArrays() {
+    persons = updateArrayFromCheckboxes('.person-item', originalPersons);
+    numeri = updateArrayFromCheckboxes('.numerus-item', originalNumeri);
+    tempora = updateArrayFromCheckboxes('.tempus-item', originalTempora);
+    genera = updateArrayFromCheckboxes('.genus-item', originalGenera);
+    modi = updateArrayFromCheckboxes('.modus-item', originalModi);
+}
 
 /**
  * Generates a conjugated form of the given verb based on the selected parameters.
  * Uses the verbsData array to find the correct conjugation if available.
- * 
- * @param {string} verb - The infinitive form of the verb
- * @param {string} person - The grammatical person (1., 2., 3. Person)
- * @param {string} numerus - The grammatical number (Singular, Plural)
- * @param {string} tempus - The tense (Präsens, Präteritum, etc.)
- * @param {string} genus - The voice (Aktiv, Passiv)
- * @param {string} modus - The mood (Indikativ, Konjunktiv I, etc.)
- * @returns {string} The conjugated verb form
  */
 function generateVerbConjugation(verb, person, numerus, tempus, genus, modus) {
     // Try to find the verb in our loaded data
@@ -80,7 +345,6 @@ function generateVerbConjugation(verb, person, numerus, tempus, genus, modus) {
     
     if (verbData) {
         // Convert the parameters to the key format used in the JSON
-        // Example: IND_PRAES_AKT_S_1 for Indikativ Präsens Aktiv Singular 1. Person
         const modusPrefix = modus === 'Indikativ' ? 'IND' : 
                           modus === 'Konjunktiv I' ? 'KONJ1' :
                           modus === 'Konjunktiv II' ? 'KONJ2' : '';
@@ -107,178 +371,114 @@ function generateVerbConjugation(verb, person, numerus, tempus, genus, modus) {
         }
     }
     
-    // Fall back to the basic generation logic if no data is found
-    // Extract the stem of the verb (remove -en, -n endings)
-    let stem = verb;
-    if (verb.endsWith('en')) {
-        stem = verb.slice(0, -2);
-    } else if (verb.endsWith('n')) {
-        stem = verb.slice(0, -1);
-    }
-    
-    // Basic conjugation for Präsens Indikativ Aktiv
-    let conjugated = stem;
-    
-    if (tempus === 'Präsens' && genus === 'Aktiv' && modus === 'Indikativ') {
-        if (numerus === 'Singular') {
-            switch (person) {
-                case '1. Person':
-                    conjugated += 'e';
-                    break;
-                case '2. Person':
-                    conjugated += 'st';
-                    break;
-                case '3. Person':
-                    conjugated += 't';
-                    break;
-            }
-        } else { // Plural
-            switch (person) {
-                case '1. Person':
-                    conjugated += 'en';
-                    break;
-                case '2. Person':
-                    conjugated += 't';
-                    break;
-                case '3. Person':
-                    conjugated += 'en';
-                    break;
-            }
-        }
-    } else {
-        // For other tenses and moods, return a placeholder format
-        conjugated = `[${verb} - ${person} ${numerus} ${tempus} ${genus} ${modus}]`;
-    }
-    
-    return conjugated;
+    // Fallback basic conjugation logic
+    return `[${verb} - ${person} ${numerus} ${tempus} ${genus} ${modus}]`;
 }
 
-// When clicking on the solution element, toggle its visibility
-document.addEventListener('DOMContentLoaded', () => {
-    const solutionElement = document.getElementById('solution');
-    if (solutionElement) {
-        solutionElement.classList.add('hidden-solution');
-        solutionElement.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent triggering the document click
-            solutionElement.classList.toggle('hidden-solution');
-        });
+// Function to generate a random task
+function generateRandomTask() {
+    console.log('Generating random task');
+    
+    // Get a random verb from the loaded verbs data
+    let randomVerbIndex, verbName, verbObj;
+    
+    // Use the appropriate data source
+    if (verbsData.length > 0) {
+        randomVerbIndex = Math.floor(Math.random() * verbsData.length);
+        verbObj = verbsData[randomVerbIndex];
+        verbName = verbObj.Infinitiv;
+        // Check if this verb has transitivity info, otherwise default
+        if (typeof verbObj.transitiv === 'undefined') {
+            // Look for it in our sample data
+            const sampleVerb = verbs.find(v => v.name === verbName);
+            verbObj.transitiv = sampleVerb ? sampleVerb.transitiv : 1;
+        }
+    } else {
+        // Use the sample verb array
+        randomVerbIndex = Math.floor(Math.random() * verbs.length);
+        verbObj = verbs[randomVerbIndex];
+        verbName = verbObj.name || verbObj;
+        verbObj.transitiv = verbObj.transitiv || 1; // Default to transitive
     }
-});
-
-document.addEventListener('click', (e) => {
-    console.log('clicked');
-    // Verb
-    const verb = document.getElementById('verb');
-    verb.innerText = verbs[Math.floor(Math.random() * verbs.length)];
-    // Person
-    const person = document.getElementById('person');
-    person.innerText = persons[Math.floor(Math.random() * persons.length)];
-    // Numerus
-    const numerus = document.getElementById('numerus');
-    numerus.innerText = numeri[Math.floor(Math.random() * numeri.length)];
-    // Tempus
-    const tempus = document.getElementById('tempus');
-    tempus.innerText = tempora[Math.floor(Math.random() * tempora.length)];
-    // Genus
-    const genus = document.getElementById('genus');
-    genus.innerText = genera[Math.floor(Math.random() * genera.length)];
-    // Modus
-    const modus = document.getElementById('modus');
-    modus.innerText = modi[Math.floor(Math.random() * modi.length)];
     
-    // Generate and update solution
-    const verbText = document.getElementById('verb').innerText;
-    const personText = document.getElementById('person').innerText;
-    const numerusText = document.getElementById('numerus').innerText;
-    const tempusText = document.getElementById('tempus').innerText;
-    const genusText = document.getElementById('genus').innerText;
-    const modusText = document.getElementById('modus').innerText;
+    // Update verb display
+    document.getElementById("verb").textContent = verbName;
     
-    const solutionElement = document.getElementById('solution');
+    // Get enabled options for each category
+    let enabledPerson = getEnabledOptions("person");
+    let enabledNumerus = getEnabledOptions("numerus");
+    let enabledTempus = getEnabledOptions("tempus");
+    
+    // For genus, check if the verb is transitive or not
+    let enabledGenus = getEnabledOptions("genus");
+    if (verbObj.transitiv === 0) { // If intransitive, remove Passiv
+        enabledGenus = enabledGenus.filter(g => g !== "Passiv");
+        if (enabledGenus.length === 0) {
+            enabledGenus = ["Aktiv"];
+        }
+    }
+    
+    let enabledModus = getEnabledOptions("modus");
+    
+    // If any category has no enabled options, use all options for that category
+    if (enabledPerson.length === 0) enabledPerson = originalPersons;
+    if (enabledNumerus.length === 0) enabledNumerus = originalNumeri;
+    if (enabledTempus.length === 0) enabledTempus = originalTempora;
+    if (enabledGenus.length === 0) enabledGenus = originalGenera;
+    if (enabledModus.length === 0) enabledModus = originalModi;
+    
+    // Select a random option from each category
+    const randomPerson = enabledPerson[Math.floor(Math.random() * enabledPerson.length)];
+    const randomNumerus = enabledNumerus[Math.floor(Math.random() * enabledNumerus.length)];
+    const randomTempus = enabledTempus[Math.floor(Math.random() * enabledTempus.length)];
+    const randomGenus = enabledGenus[Math.floor(Math.random() * enabledGenus.length)];
+    const randomModus = enabledModus[Math.floor(Math.random() * enabledModus.length)];
+    
+    // Update the UI
+    document.getElementById("person").textContent = randomPerson;
+    document.getElementById("numerus").textContent = randomNumerus;
+    document.getElementById("tempus").textContent = randomTempus;
+    document.getElementById("genus").textContent = randomGenus;
+    document.getElementById("modus").textContent = randomModus;
+    
+    // Reset solution and generate new solution
+    const solutionElement = document.getElementById("solution");
+    let conjugatedVerb = "";
     if (solutionElement) {
-        const conjugatedVerb = generateVerbConjugation(verbText, personText, numerusText, tempusText, genusText, modusText);
+        conjugatedVerb = generateVerbConjugation(verbName, randomPerson, randomNumerus, randomTempus, randomGenus, randomModus);
         solutionElement.innerText = conjugatedVerb;
         solutionElement.classList.add('hidden-solution');
     }
-});
-
-// Show/hide grid rows based on heading checkboxes
-function updateSectionVisibility() {
-    const visibleSections = [];
     
-    // Always keep verb and solution rows
-    visibleSections.push('row-verb');
-    visibleSections.push('row-solution');
+    // Create task object and store in history
+    const task = {
+        verb: verbName,
+        person: randomPerson,
+        numerus: randomNumerus,
+        tempus: randomTempus,
+        genus: randomGenus,
+        modus: randomModus,
+        solution: conjugatedVerb
+    };
     
-    Object.entries(sectionMap).forEach(([checkboxId, section]) => {
-        const checkbox = document.getElementById(checkboxId);
-        const rowContainer = document.getElementById('row-' + section);
-        if (checkbox && rowContainer) {
-            rowContainer.style.display = checkbox.checked ? 'contents' : 'none';
-            if (checkbox.checked) {
-                visibleSections.push('row-' + section);
-            }
-        }
-    });
-    
-    // Recalculate the row heights based on visible sections
-    const gridContainer = document.querySelector('.grid-container');
-    if (gridContainer) {
-        // Count visible rows (including verb and solution which are always visible)
-        const visibleRowCount = visibleSections.length;
-        
-        // Update grid-template-rows to have equal heights for all visible rows
-        gridContainer.style.gridTemplateRows = `repeat(${visibleRowCount}, minmax(0, 1fr))`;
+    // Remove any future tasks if navigating from middle of history
+    if (currentTaskIndex < taskHistory.length - 1) {
+        taskHistory = taskHistory.slice(0, currentTaskIndex + 1);
     }
-}
-
-// Utility to update an array based on checked checkboxes
-function updateArrayFromCheckboxes(selector, originalArray) {
-    const checkedLabels = Array.from(document.querySelectorAll(selector))
-        .filter(cb => cb.checked)
-        .map(cb => cb.parentElement.textContent.trim());
-    // Keep original order
-    return originalArray.filter(item => checkedLabels.includes(item));
-}
-
-// Update arrays when any item checkbox changes
-function updateOptionArrays() {
-    persons = updateArrayFromCheckboxes('.person-item', originalPersons);
-    numeri = updateArrayFromCheckboxes('.numerus-item', originalNumeri);
-    tempora = updateArrayFromCheckboxes('.tempus-item', originalTempora);
-    genera = updateArrayFromCheckboxes('.genus-item', originalGenera);
-    modi = updateArrayFromCheckboxes('.modus-item', originalModi);
-}
-
-// Attach event listeners to all item checkboxes
-document.querySelectorAll('.person-item, .numerus-item, .tempus-item, .genus-item, .modus-item')
-    .forEach(cb => cb.addEventListener('change', updateOptionArrays));
-
-// Attach event listeners to heading checkboxes
-Object.keys(sectionMap).forEach(id => {
-    const cb = document.getElementById(id);
-    if (cb) {
-        cb.addEventListener('change', updateSectionVisibility);
+    
+    // Add new task to history
+    taskHistory.push(task);
+    
+    // Limit history size
+    if (taskHistory.length > maxHistorySize) {
+        taskHistory.shift();
+        // Since we removed the first item, adjust index
+        currentTaskIndex = Math.max(0, currentTaskIndex - 1);
     }
-});
-
-// Initial update in case checkboxes are not all checked
-updateSectionVisibility();
-
-// Initial update to arrays
-updateOptionArrays();
-
-// Modal open/close logic
-const gear = document.getElementById('settings-gear');
-const modal = document.getElementById('settings-modal');
-const closeBtn = document.getElementById('settings-modal-close');
-gear.addEventListener('click', (e) => {
-    e.stopPropagation();
-    modal.style.display = 'block';
-});
-closeBtn.addEventListener('click', (e) => {
-    modal.style.display = 'none';
-});
-modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.style.display = 'none';
-});
+    
+    // Update current index
+    currentTaskIndex = taskHistory.length - 1;
+    
+    // Update navigation buttons
+    updateNavigationButtons();
+}

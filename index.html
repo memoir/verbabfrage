@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Navigation and settings controls at the top of your page -->
+<div class="controls">
+    <button id="prev-task" class="nav-button" disabled title="Previous task">&#8592;</button>
+    <button id="next-task" class="nav-button" disabled title="Next task">&#8594;</button>
+    <button id="settings-gear" title="Einstellungen">⚙</button>
+</div>
 <div class="grid-container">
     <div class="row-container" id="row-verb">
         <div class="grid-title" id="verb-title">Verb</div>
@@ -37,8 +43,6 @@
         <div class="grid-item" id="solution">Klick für Lösung</div>
     </div>
 </div>
-<!-- Gear icon -->
-<div id="settings-gear" title="Einstellungen">⚙</div>
 <!-- Modal window -->
 <div id="settings-modal">
     <div id="settings-modal-content">

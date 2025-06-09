@@ -1,5 +1,7 @@
 [ {
   "Infinitiv" : "anbieten",
+  "PP" : "angeboten",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich biete an",
   "IND_PRAES_AKT_S_2" : "du bietest an",
   "IND_PRAES_AKT_S_3" : "er/sie/es bietet an",
@@ -218,6 +220,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angeboten worden sein"
 }, {
   "Infinitiv" : "anfangen",
+  "PP" : "angefangen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich fange an",
   "IND_PRAES_AKT_S_2" : "du fängst an",
   "IND_PRAES_AKT_S_3" : "er/sie/es fängt an",
@@ -436,6 +440,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angefangen worden sein"
 }, {
   "Infinitiv" : "ankommen",
+  "PP" : "angekommen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich komme an",
   "IND_PRAES_AKT_S_2" : "du kommst an",
   "IND_PRAES_AKT_S_3" : "er/sie/es kommt an",
@@ -654,6 +660,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angekommen worden sein"
 }, {
   "Infinitiv" : "anmachen",
+  "PP" : "angemacht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich mache an",
   "IND_PRAES_AKT_S_2" : "du machst an",
   "IND_PRAES_AKT_S_3" : "er/sie/es macht an",
@@ -872,6 +880,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angemacht worden sein"
 }, {
   "Infinitiv" : "anmelden",
+  "PP" : "angemeldet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich melde an",
   "IND_PRAES_AKT_S_2" : "du meldest an",
   "IND_PRAES_AKT_S_3" : "er/sie/es meldet an",
@@ -1090,6 +1100,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angemeldet worden sein"
 }, {
   "Infinitiv" : "anrufen",
+  "PP" : "angerufen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich rufe an",
   "IND_PRAES_AKT_S_2" : "du rufst an",
   "IND_PRAES_AKT_S_3" : "er/sie/es ruft an",
@@ -1308,6 +1320,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angerufen worden sein"
 }, {
   "Infinitiv" : "antworten",
+  "PP" : "geantwortet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich antworte",
   "IND_PRAES_AKT_S_2" : "du antwortest",
   "IND_PRAES_AKT_S_3" : "er/sie/es antwortet",
@@ -1526,6 +1540,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geantwortet worden sein"
 }, {
   "Infinitiv" : "anziehen",
+  "PP" : "angezogen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich ziehe an",
   "IND_PRAES_AKT_S_2" : "du ziehst an",
   "IND_PRAES_AKT_S_3" : "er/sie/es zieht an",
@@ -1744,6 +1760,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden angezogen worden sein"
 }, {
   "Infinitiv" : "arbeiten",
+  "PP" : "gearbeitet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich arbeite",
   "IND_PRAES_AKT_S_2" : "du arbeitest",
   "IND_PRAES_AKT_S_3" : "er/sie/es arbeitet",
@@ -1962,6 +1980,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gearbeitet worden sein"
 }, {
   "Infinitiv" : "ärgern",
+  "PP" : "geärgert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich ärgere",
   "IND_PRAES_AKT_S_2" : "du ärgerst",
   "IND_PRAES_AKT_S_3" : "er/sie/es ärgert",
@@ -2180,6 +2200,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geärgert worden sein"
 }, {
   "Infinitiv" : "aufhören",
+  "PP" : "aufgehört",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich höre auf",
   "IND_PRAES_AKT_S_2" : "du hörst auf",
   "IND_PRAES_AKT_S_3" : "er/sie/es hört auf",
@@ -2398,6 +2420,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden aufgehört worden sein"
 }, {
   "Infinitiv" : "aufmachen",
+  "PP" : "aufgemacht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich mache auf",
   "IND_PRAES_AKT_S_2" : "du machst auf",
   "IND_PRAES_AKT_S_3" : "er/sie/es macht auf",
@@ -2616,6 +2640,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden aufgemacht worden sein"
 }, {
   "Infinitiv" : "aufpassen",
+  "PP" : "aufgepasst",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich passe auf",
   "IND_PRAES_AKT_S_2" : "du passt auf",
   "IND_PRAES_AKT_S_3" : "er/sie/es passt auf",
@@ -2834,6 +2860,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden aufgepasst worden sein"
 }, {
   "Infinitiv" : "aufwachen",
+  "PP" : "aufgewacht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich wache auf",
   "IND_PRAES_AKT_S_2" : "du wachst auf",
   "IND_PRAES_AKT_S_3" : "er/sie/es wacht auf",
@@ -3052,6 +3080,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden aufgewacht worden sein"
 }, {
   "Infinitiv" : "ausmachen",
+  "PP" : "ausgemacht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich mache aus",
   "IND_PRAES_AKT_S_2" : "du machst aus",
   "IND_PRAES_AKT_S_3" : "er/sie/es macht aus",
@@ -3270,6 +3300,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden ausgemacht worden sein"
 }, {
   "Infinitiv" : "ausruhen",
+  "PP" : "ausgeruht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich ruhe aus",
   "IND_PRAES_AKT_S_2" : "du ruhst aus",
   "IND_PRAES_AKT_S_3" : "er/sie/es ruht aus",
@@ -3488,6 +3520,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden ausgeruht worden sein"
 }, {
   "Infinitiv" : "aussehen",
+  "PP" : "gesehen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich sehe aus",
   "IND_PRAES_AKT_S_2" : "du siehst aus",
   "IND_PRAES_AKT_S_3" : "er/sie/es sieht aus",
@@ -3706,6 +3740,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesehen worden sein"
 }, {
   "Infinitiv" : "aussteigen",
+  "PP" : "ausgestiegen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich steige aus",
   "IND_PRAES_AKT_S_2" : "du steigst aus",
   "IND_PRAES_AKT_S_3" : "er/sie/es steigt aus",
@@ -3924,6 +3960,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden ausgestiegen worden sein"
 }, {
   "Infinitiv" : "ausziehen",
+  "PP" : "ausgezogen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich ziehe aus",
   "IND_PRAES_AKT_S_2" : "du ziehst aus",
   "IND_PRAES_AKT_S_3" : "er/sie/es zieht aus",
@@ -4142,6 +4180,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden ausgezogen worden sein"
 }, {
   "Infinitiv" : "baden",
+  "PP" : "gebadet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bade",
   "IND_PRAES_AKT_S_2" : "du badest",
   "IND_PRAES_AKT_S_3" : "er/sie/es badet",
@@ -4360,6 +4400,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gebadet worden sein"
 }, {
   "Infinitiv" : "bedeuten",
+  "PP" : "bedeutet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bedeute",
   "IND_PRAES_AKT_S_2" : "du bedeutest",
   "IND_PRAES_AKT_S_3" : "er/sie/es bedeutet",
@@ -4578,6 +4620,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden bedeutet worden sein"
 }, {
   "Infinitiv" : "beginnen",
+  "PP" : "begonnen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich beginne",
   "IND_PRAES_AKT_S_2" : "du beginnst",
   "IND_PRAES_AKT_S_3" : "er/sie/es beginnt",
@@ -4796,6 +4840,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden begonnen worden sein"
 }, {
   "Infinitiv" : "bekommen",
+  "PP" : "bekommen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bekomme",
   "IND_PRAES_AKT_S_2" : "du bekommst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bekommt",
@@ -5014,6 +5060,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden bekommen worden sein"
 }, {
   "Infinitiv" : "berühren",
+  "PP" : "berührt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich berühre",
   "IND_PRAES_AKT_S_2" : "du berührst",
   "IND_PRAES_AKT_S_3" : "er/sie/es berührt",
@@ -5232,6 +5280,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden berührt worden sein"
 }, {
   "Infinitiv" : "besichtigen",
+  "PP" : "besichtigt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich besichtige",
   "IND_PRAES_AKT_S_2" : "du besichtigst",
   "IND_PRAES_AKT_S_3" : "er/sie/es besichtigt",
@@ -5450,6 +5500,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden besichtigt worden sein"
 }, {
   "Infinitiv" : "besuchen",
+  "PP" : "besucht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich besuche",
   "IND_PRAES_AKT_S_2" : "du besuchst",
   "IND_PRAES_AKT_S_3" : "er/sie/es besucht",
@@ -5668,6 +5720,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden besucht worden sein"
 }, {
   "Infinitiv" : "bewegen",
+  "PP" : "bewegt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bewege",
   "IND_PRAES_AKT_S_2" : "du bewegst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bewegt",
@@ -5886,6 +5940,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden bewegt worden sein"
 }, {
   "Infinitiv" : "bezahlen",
+  "PP" : "bezahlt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bezahle",
   "IND_PRAES_AKT_S_2" : "du bezahlst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bezahlt",
@@ -6104,6 +6160,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden bezahlt worden sein"
 }, {
   "Infinitiv" : "bitten",
+  "PP" : "gebeten",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bitte",
   "IND_PRAES_AKT_S_2" : "du bittest",
   "IND_PRAES_AKT_S_3" : "er/sie/es bittet",
@@ -6322,6 +6380,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gebeten worden sein"
 }, {
   "Infinitiv" : "bleiben",
+  "PP" : "geblieben",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich bleibe",
   "IND_PRAES_AKT_S_2" : "du bleibst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bleibt",
@@ -6540,6 +6600,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geblieben worden sein"
 }, {
   "Infinitiv" : "brauchen",
+  "PP" : "gebraucht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich brauche",
   "IND_PRAES_AKT_S_2" : "du brauchst",
   "IND_PRAES_AKT_S_3" : "er/sie/es braucht",
@@ -6758,6 +6820,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gebraucht worden sein"
 }, {
   "Infinitiv" : "brechen",
+  "PP" : "gebrochen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich breche",
   "IND_PRAES_AKT_S_2" : "du brichst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bricht",
@@ -6976,6 +7040,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gebrochen worden sein"
 }, {
   "Infinitiv" : "bringen",
+  "PP" : "gebracht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bringe",
   "IND_PRAES_AKT_S_2" : "du bringst",
   "IND_PRAES_AKT_S_3" : "er/sie/es bringt",
@@ -7194,6 +7260,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gebracht worden sein"
 }, {
   "Infinitiv" : "danken",
+  "PP" : "gedankt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich danke",
   "IND_PRAES_AKT_S_2" : "du dankst",
   "IND_PRAES_AKT_S_3" : "er/sie/es dankt",
@@ -7412,6 +7480,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gedankt worden sein"
 }, {
   "Infinitiv" : "denken",
+  "PP" : "gedacht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich denke",
   "IND_PRAES_AKT_S_2" : "du denkst",
   "IND_PRAES_AKT_S_3" : "er/sie/es denkt",
@@ -7630,6 +7700,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gedacht worden sein"
 }, {
   "Infinitiv" : "drücken",
+  "PP" : "gedrückt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich drücke",
   "IND_PRAES_AKT_S_2" : "du drückst",
   "IND_PRAES_AKT_S_3" : "er/sie/es drückt",
@@ -7848,6 +7920,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gedrückt worden sein"
 }, {
   "Infinitiv" : "duschen",
+  "PP" : "geduscht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich dusche",
   "IND_PRAES_AKT_S_2" : "du duschst",
   "IND_PRAES_AKT_S_3" : "er/sie/es duscht",
@@ -8066,6 +8140,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geduscht worden sein"
 }, {
   "Infinitiv" : "einladen",
+  "PP" : "eingeladen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich lade ein",
   "IND_PRAES_AKT_S_2" : "du lädst ein",
   "IND_PRAES_AKT_S_3" : "er/sie/es lädet ein",
@@ -8284,6 +8360,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden eingeladen worden sein"
 }, {
   "Infinitiv" : "einsteigen",
+  "PP" : "eingestiegen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich steige ein",
   "IND_PRAES_AKT_S_2" : "du steigst ein",
   "IND_PRAES_AKT_S_3" : "er/sie/es steigt ein",
@@ -8502,6 +8580,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden eingestiegen worden sein"
 }, {
   "Infinitiv" : "empfangen",
+  "PP" : "empfangen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich empfange",
   "IND_PRAES_AKT_S_2" : "du empfängst",
   "IND_PRAES_AKT_S_3" : "er/sie/es empfängt",
@@ -8720,6 +8800,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden empfangen worden sein"
 }, {
   "Infinitiv" : "empfehlen",
+  "PP" : "empfohlen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich empfehle",
   "IND_PRAES_AKT_S_2" : "du empfiehlst",
   "IND_PRAES_AKT_S_3" : "er/sie/es empfiehlt",
@@ -8938,6 +9020,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden empfohlen worden sein"
 }, {
   "Infinitiv" : "enden",
+  "PP" : "geendet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich ende",
   "IND_PRAES_AKT_S_2" : "du endest",
   "IND_PRAES_AKT_S_3" : "er/sie/es endet",
@@ -8950,30 +9034,30 @@
   "IND_PRAET_AKT_P_1" : "wir endeten",
   "IND_PRAET_AKT_P_2" : "ihr endetet",
   "IND_PRAET_AKT_P_3" : "sie endeten",
-  "IND_PERF_AKT_S_1" : "ich bin geendet",
-  "IND_PERF_AKT_S_2" : "du bist geendet",
-  "IND_PERF_AKT_S_3" : "er/sie/es ist geendet",
-  "IND_PERF_AKT_P_1" : "wir sind geendet",
-  "IND_PERF_AKT_P_2" : "ihr seid geendet",
-  "IND_PERF_AKT_P_3" : "sie sind geendet",
-  "IND_PLUSQ_AKT_S_1" : "ich war geendet",
-  "IND_PLUSQ_AKT_S_2" : "du warst geendet",
-  "IND_PLUSQ_AKT_S_3" : "er/sie/es war geendet",
-  "IND_PLUSQ_AKT_P_1" : "wir waren geendet",
-  "IND_PLUSQ_AKT_P_2" : "ihr wart geendet",
-  "IND_PLUSQ_AKT_P_3" : "sie waren geendet",
+  "IND_PERF_AKT_S_1" : "ich habe geendet",
+  "IND_PERF_AKT_S_2" : "du hast geendet",
+  "IND_PERF_AKT_S_3" : "er/sie/es hat geendet",
+  "IND_PERF_AKT_P_1" : "wir haben geendet",
+  "IND_PERF_AKT_P_2" : "ihr habt geendet",
+  "IND_PERF_AKT_P_3" : "sie haben geendet",
+  "IND_PLUSQ_AKT_S_1" : "ich hatte geendet",
+  "IND_PLUSQ_AKT_S_2" : "du hattest geendet",
+  "IND_PLUSQ_AKT_S_3" : "er/sie/es hatte geendet",
+  "IND_PLUSQ_AKT_P_1" : "wir hatten geendet",
+  "IND_PLUSQ_AKT_P_2" : "ihr hattet geendet",
+  "IND_PLUSQ_AKT_P_3" : "sie hatten geendet",
   "IND_FUT1_AKT_S_1" : "ich werde enden",
   "IND_FUT1_AKT_S_2" : "du wirst enden",
   "IND_FUT1_AKT_S_3" : "er/sie/es wird enden",
   "IND_FUT1_AKT_P_1" : "wir werden enden",
   "IND_FUT1_AKT_P_2" : "ihr werdet enden",
   "IND_FUT1_AKT_P_3" : "sie werden enden",
-  "IND_FUT2_AKT_S_1" : "ich werde geendet sein",
-  "IND_FUT2_AKT_S_2" : "du wirst geendet sein",
-  "IND_FUT2_AKT_S_3" : "er/sie/es wird geendet sein",
-  "IND_FUT2_AKT_P_1" : "wir werden geendet sein",
+  "IND_FUT2_AKT_S_1" : "ich werde geendet haben",
+  "IND_FUT2_AKT_S_2" : "du wirst geendet haben",
+  "IND_FUT2_AKT_S_3" : "er/sie/es wird geendet haben",
+  "IND_FUT2_AKT_P_1" : "wir werden geendet haben",
   "IND_FUT2_AKT_P_2" : "ihr werdet geendet haben",
-  "IND_FUT2_AKT_P_3" : "sie werden geendet sein",
+  "IND_FUT2_AKT_P_3" : "sie werden geendet haben",
   "IND_PRAES_PASS_S_1" : "ich werde geendet",
   "IND_PRAES_PASS_S_2" : "du wirst geendet",
   "IND_PRAES_PASS_S_3" : "er/sie/es wird geendet",
@@ -9016,36 +9100,36 @@
   "KONJ1_PRAES_AKT_P_1" : "wir enden",
   "KONJ1_PRAES_AKT_P_2" : "ihr endet",
   "KONJ1_PRAES_AKT_P_3" : "sie enden",
-  "KONJ1_PRAET_AKT_S_1" : "ich sei geendet",
-  "KONJ1_PERF_AKT_S_1" : "ich sei geendet",
-  "KONJ1_PLUSQ_AKT_S_1" : "ich sei geendet",
-  "KONJ1_PRAET_AKT_S_2" : "du seist geendet",
-  "KONJ1_PERF_AKT_S_2" : "du seist geendet",
-  "KONJ1_PLUSQ_AKT_S_2" : "du seist geendet",
-  "KONJ1_PRAET_AKT_S_3" : "er/sie/es sei geendet",
-  "KONJ1_PERF_AKT_S_3" : "er/sie/es sei geendet",
-  "KONJ1_PLUSQ_AKT_S_3" : "er/sie/es sei geendet",
-  "KONJ1_PRAET_AKT_P_1" : "wir seien geendet",
-  "KONJ1_PERF_AKT_P_1" : "wir seien geendet",
-  "KONJ1_PLUSQ_AKT_P_1" : "wir seien geendet",
-  "KONJ1_PRAET_AKT_P_2" : "ihr seiet geendet",
-  "KONJ1_PERF_AKT_P_2" : "ihr seiet geendet",
-  "KONJ1_PLUSQ_AKT_P_2" : "ihr seiet geendet",
-  "KONJ1_PRAET_AKT_P_3" : "sie seien geendet",
-  "KONJ1_PERF_AKT_P_3" : "sie seien geendet",
-  "KONJ1_PLUSQ_AKT_P_3" : "sie seien geendet",
+  "KONJ1_PRAET_AKT_S_1" : "ich habe geendet",
+  "KONJ1_PERF_AKT_S_1" : "ich habe geendet",
+  "KONJ1_PLUSQ_AKT_S_1" : "ich habe geendet",
+  "KONJ1_PRAET_AKT_S_2" : "du habest geendet",
+  "KONJ1_PERF_AKT_S_2" : "du habest geendet",
+  "KONJ1_PLUSQ_AKT_S_2" : "du habest geendet",
+  "KONJ1_PRAET_AKT_S_3" : "er/sie/es habe geendet",
+  "KONJ1_PERF_AKT_S_3" : "er/sie/es habe geendet",
+  "KONJ1_PLUSQ_AKT_S_3" : "er/sie/es habe geendet",
+  "KONJ1_PRAET_AKT_P_1" : "wir haben geendet",
+  "KONJ1_PERF_AKT_P_1" : "wir haben geendet",
+  "KONJ1_PLUSQ_AKT_P_1" : "wir haben geendet",
+  "KONJ1_PRAET_AKT_P_2" : "ihr habet geendet",
+  "KONJ1_PERF_AKT_P_2" : "ihr habet geendet",
+  "KONJ1_PLUSQ_AKT_P_2" : "ihr habet geendet",
+  "KONJ1_PRAET_AKT_P_3" : "sie haben geendet",
+  "KONJ1_PERF_AKT_P_3" : "sie haben geendet",
+  "KONJ1_PLUSQ_AKT_P_3" : "sie haben geendet",
   "KONJ1_FUT1_AKT_S_1" : "ich werde enden",
   "KONJ1_FUT1_AKT_S_2" : "du werdest enden",
   "KONJ1_FUT1_AKT_S_3" : "er/sie/es werde enden",
   "KONJ1_FUT1_AKT_P_1" : "wir werden enden",
   "KONJ1_FUT1_AKT_P_2" : "ihr werdet enden",
   "KONJ1_FUT1_AKT_P_3" : "sie werden enden",
-  "KONJ1_FUT2_AKT_S_1" : "ich werde geendet sein",
-  "KONJ1_FUT2_AKT_S_2" : "du werdest geendet sein",
-  "KONJ1_FUT2_AKT_S_3" : "er/sie/es werde geendet sein",
-  "KONJ1_FUT2_AKT_P_1" : "wir werden geendet sein",
+  "KONJ1_FUT2_AKT_S_1" : "ich werde geendet haben",
+  "KONJ1_FUT2_AKT_S_2" : "du werdest geendet haben",
+  "KONJ1_FUT2_AKT_S_3" : "er/sie/es werde geendet haben",
+  "KONJ1_FUT2_AKT_P_1" : "wir werden geendet haben",
   "KONJ1_FUT2_AKT_P_2" : "ihr werdet geendet haben",
-  "KONJ1_FUT2_AKT_P_3" : "sie werden geendet sein",
+  "KONJ1_FUT2_AKT_P_3" : "sie werden geendet haben",
   "KONJ1_PRAES_PASS_S_1" : "ich werde geendet",
   "KONJ1_PRAES_PASS_S_2" : "du werdest geendet",
   "KONJ1_PRAES_PASS_S_3" : "er/sie/es werde geendet",
@@ -9088,36 +9172,36 @@
   "KONJ2_PRAES_AKT_P_1" : "wir endeten",
   "KONJ2_PRAES_AKT_P_2" : "ihr endetet",
   "KONJ2_PRAES_AKT_P_3" : "sie endeten",
-  "KONJ2_PRAET_AKT_S_1" : "ich wäre geendet",
-  "KONJ2_PERF_AKT_S_1" : "ich wäre geendet",
-  "KONJ2_PLUSQ_AKT_S_1" : "ich wäre geendet",
-  "KONJ2_PRAET_AKT_S_2" : "du wärest geendet",
-  "KONJ2_PERF_AKT_S_2" : "du wärest geendet",
-  "KONJ2_PLUSQ_AKT_S_2" : "du wärest geendet",
-  "KONJ2_PRAET_AKT_S_3" : "er/sie/es wäre geendet",
-  "KONJ2_PERF_AKT_S_3" : "er/sie/es wäre geendet",
-  "KONJ2_PLUSQ_AKT_S_3" : "er/sie/es wäre geendet",
-  "KONJ2_PRAET_AKT_P_1" : "wir wären geendet",
-  "KONJ2_PERF_AKT_P_1" : "wir wären geendet",
-  "KONJ2_PLUSQ_AKT_P_1" : "wir wären geendet",
-  "KONJ2_PRAET_AKT_P_2" : "ihr wäret geendet",
-  "KONJ2_PERF_AKT_P_2" : "ihr wäret geendet",
-  "KONJ2_PLUSQ_AKT_P_2" : "ihr wäret geendet",
-  "KONJ2_PRAET_AKT_P_3" : "sie wären geendet",
-  "KONJ2_PERF_AKT_P_3" : "sie wären geendet",
-  "KONJ2_PLUSQ_AKT_P_3" : "sie wären geendet",
+  "KONJ2_PRAET_AKT_S_1" : "ich hätte geendet",
+  "KONJ2_PERF_AKT_S_1" : "ich hätte geendet",
+  "KONJ2_PLUSQ_AKT_S_1" : "ich hätte geendet",
+  "KONJ2_PRAET_AKT_S_2" : "du hättest geendet",
+  "KONJ2_PERF_AKT_S_2" : "du hättest geendet",
+  "KONJ2_PLUSQ_AKT_S_2" : "du hättest geendet",
+  "KONJ2_PRAET_AKT_S_3" : "er/sie/es hätte geendet",
+  "KONJ2_PERF_AKT_S_3" : "er/sie/es hätte geendet",
+  "KONJ2_PLUSQ_AKT_S_3" : "er/sie/es hätte geendet",
+  "KONJ2_PRAET_AKT_P_1" : "wir hätten geendet",
+  "KONJ2_PERF_AKT_P_1" : "wir hätten geendet",
+  "KONJ2_PLUSQ_AKT_P_1" : "wir hätten geendet",
+  "KONJ2_PRAET_AKT_P_2" : "ihr hättet geendet",
+  "KONJ2_PERF_AKT_P_2" : "ihr hättet geendet",
+  "KONJ2_PLUSQ_AKT_P_2" : "ihr hättet geendet",
+  "KONJ2_PRAET_AKT_P_3" : "sie hätten geendet",
+  "KONJ2_PERF_AKT_P_3" : "sie hätten geendet",
+  "KONJ2_PLUSQ_AKT_P_3" : "sie hätten geendet",
   "KONJ2_FUT1_AKT_S_1" : "ich würde enden",
   "KONJ2_FUT1_AKT_S_2" : "du würdest enden",
   "KONJ2_FUT1_AKT_S_3" : "er/sie/es würde enden",
   "KONJ2_FUT1_AKT_P_1" : "wir würden enden",
   "KONJ2_FUT1_AKT_P_2" : "ihr würdet enden",
   "KONJ2_FUT1_AKT_P_3" : "sie würden enden",
-  "KONJ2_FUT2_AKT_S_1" : "ich würde geendet sein",
-  "KONJ2_FUT2_AKT_S_2" : "du würdest geendet sein",
-  "KONJ2_FUT2_AKT_S_3" : "er/sie/es würde geendet sein",
-  "KONJ2_FUT2_AKT_P_1" : "wir würden geendet sein",
+  "KONJ2_FUT2_AKT_S_1" : "ich würde geendet haben",
+  "KONJ2_FUT2_AKT_S_2" : "du würdest geendet haben",
+  "KONJ2_FUT2_AKT_S_3" : "er/sie/es würde geendet haben",
+  "KONJ2_FUT2_AKT_P_1" : "wir würden geendet haben",
   "KONJ2_FUT2_AKT_P_2" : "ihr würdet geendet haben",
-  "KONJ2_FUT2_AKT_P_3" : "sie würden geendet sein",
+  "KONJ2_FUT2_AKT_P_3" : "sie würden geendet haben",
   "KONJ2_PRAES_PASS_S_1" : "ich würde geendet",
   "KONJ2_PRAES_PASS_S_2" : "du würdest geendet",
   "KONJ2_PRAES_PASS_S_3" : "er/sie/es würde geendet",
@@ -9156,6 +9240,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geendet worden sein"
 }, {
   "Infinitiv" : "entscheiden",
+  "PP" : "entschieden",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich entscheide",
   "IND_PRAES_AKT_S_2" : "du entscheidest",
   "IND_PRAES_AKT_S_3" : "er/sie/es entscheidet",
@@ -9374,6 +9460,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden entschieden worden sein"
 }, {
   "Infinitiv" : "entschuldigen",
+  "PP" : "entschuldigt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich entschuldige",
   "IND_PRAES_AKT_S_2" : "du entschuldigst",
   "IND_PRAES_AKT_S_3" : "er/sie/es entschuldigt",
@@ -9592,6 +9680,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden entschuldigt worden sein"
 }, {
   "Infinitiv" : "erinnern",
+  "PP" : "erinnert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich erinnere",
   "IND_PRAES_AKT_S_2" : "du erinnerst",
   "IND_PRAES_AKT_S_3" : "er/sie/es erinnert",
@@ -9810,6 +9900,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden erinnert worden sein"
 }, {
   "Infinitiv" : "erklären",
+  "PP" : "erklärt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich erkläre",
   "IND_PRAES_AKT_S_2" : "du erklärst",
   "IND_PRAES_AKT_S_3" : "er/sie/es erklärt",
@@ -10028,6 +10120,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden erklärt worden sein"
 }, {
   "Infinitiv" : "erlauben",
+  "PP" : "erlaubt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich erlaube",
   "IND_PRAES_AKT_S_2" : "du erlaubst",
   "IND_PRAES_AKT_S_3" : "er/sie/es erlaubt",
@@ -10246,6 +10340,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden erlaubt worden sein"
 }, {
   "Infinitiv" : "erzählen",
+  "PP" : "erzählt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich erzähle",
   "IND_PRAES_AKT_S_2" : "du erzählst",
   "IND_PRAES_AKT_S_3" : "er/sie/es erzählt",
@@ -10464,6 +10560,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden erzählt worden sein"
 }, {
   "Infinitiv" : "essen",
+  "PP" : "gegessen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich esse",
   "IND_PRAES_AKT_S_2" : "du isst",
   "IND_PRAES_AKT_S_3" : "er/sie/es isst",
@@ -10682,6 +10780,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gegessen worden sein"
 }, {
   "Infinitiv" : "fahren",
+  "PP" : "gefahren",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich fahre",
   "IND_PRAES_AKT_S_2" : "du fährst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fährt",
@@ -10900,6 +11000,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefahren worden sein"
 }, {
   "Infinitiv" : "fallen",
+  "PP" : "gefallen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich falle",
   "IND_PRAES_AKT_S_2" : "du fällst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fällt",
@@ -11118,6 +11220,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefallen worden sein"
 }, {
   "Infinitiv" : "fangen",
+  "PP" : "gefangen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich fange",
   "IND_PRAES_AKT_S_2" : "du fängst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fängt",
@@ -11336,6 +11440,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefangen worden sein"
 }, {
   "Infinitiv" : "fehlen",
+  "PP" : "gefehlt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich fehle",
   "IND_PRAES_AKT_S_2" : "du fehlst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fehlt",
@@ -11554,6 +11660,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefehlt worden sein"
 }, {
   "Infinitiv" : "feiern",
+  "PP" : "gefeiert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich feiere",
   "IND_PRAES_AKT_S_2" : "du feierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es feiert",
@@ -11772,6 +11880,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefeiert worden sein"
 }, {
   "Infinitiv" : "finden",
+  "PP" : "gefunden",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich finde",
   "IND_PRAES_AKT_S_2" : "du findest",
   "IND_PRAES_AKT_S_3" : "er/sie/es findet",
@@ -11990,6 +12100,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefunden worden sein"
 }, {
   "Infinitiv" : "fliegen",
+  "PP" : "geflogen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich fliege",
   "IND_PRAES_AKT_S_2" : "du fliegst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fliegt",
@@ -12208,6 +12320,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geflogen worden sein"
 }, {
   "Infinitiv" : "folgen",
+  "PP" : "gefolgt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich folge",
   "IND_PRAES_AKT_S_2" : "du folgst",
   "IND_PRAES_AKT_S_3" : "er/sie/es folgt",
@@ -12426,6 +12540,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefolgt worden sein"
 }, {
   "Infinitiv" : "fragen",
+  "PP" : "gefragt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich frage",
   "IND_PRAES_AKT_S_2" : "du fragst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fragt",
@@ -12644,6 +12760,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefragt worden sein"
 }, {
   "Infinitiv" : "freuen",
+  "PP" : "gefreut",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich freue",
   "IND_PRAES_AKT_S_2" : "du freust",
   "IND_PRAES_AKT_S_3" : "er/sie/es freut",
@@ -12862,6 +12980,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefreut worden sein"
 }, {
   "Infinitiv" : "frühstücken",
+  "PP" : "gefrühstückt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich frühstücke",
   "IND_PRAES_AKT_S_2" : "du frühstückst",
   "IND_PRAES_AKT_S_3" : "er/sie/es frühstückt",
@@ -13080,6 +13200,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefrühstückt worden sein"
 }, {
   "Infinitiv" : "fühlen",
+  "PP" : "gefühlt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich fühle",
   "IND_PRAES_AKT_S_2" : "du fühlst",
   "IND_PRAES_AKT_S_3" : "er/sie/es fühlt",
@@ -13298,6 +13420,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefühlt worden sein"
 }, {
   "Infinitiv" : "führen",
+  "PP" : "geführt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich führe",
   "IND_PRAES_AKT_S_2" : "du führst",
   "IND_PRAES_AKT_S_3" : "er/sie/es führt",
@@ -13516,6 +13640,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geführt worden sein"
 }, {
   "Infinitiv" : "geben",
+  "PP" : "gegeben",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich gebe",
   "IND_PRAES_AKT_S_2" : "du gibst",
   "IND_PRAES_AKT_S_3" : "er/sie/es gibt",
@@ -13734,6 +13860,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gegeben worden sein"
 }, {
   "Infinitiv" : "gefallen",
+  "PP" : "gefallen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich gefalle",
   "IND_PRAES_AKT_S_2" : "du gefällst",
   "IND_PRAES_AKT_S_3" : "er/sie/es gefällt",
@@ -13952,6 +14080,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gefallen worden sein"
 }, {
   "Infinitiv" : "gehen",
+  "PP" : "gegangen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich gehe",
   "IND_PRAES_AKT_S_2" : "du gehst",
   "IND_PRAES_AKT_S_3" : "er/sie/es geht",
@@ -14170,6 +14300,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gegangen worden sein"
 }, {
   "Infinitiv" : "gehören",
+  "PP" : "gehört",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich gehöre",
   "IND_PRAES_AKT_S_2" : "du gehörst",
   "IND_PRAES_AKT_S_3" : "er/sie/es gehört",
@@ -14388,6 +14520,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehört worden sein"
 }, {
   "Infinitiv" : "glauben",
+  "PP" : "geglaubt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich glaube",
   "IND_PRAES_AKT_S_2" : "du glaubst",
   "IND_PRAES_AKT_S_3" : "er/sie/es glaubt",
@@ -14606,6 +14740,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geglaubt worden sein"
 }, {
   "Infinitiv" : "grüßen",
+  "PP" : "gegrüßt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich grüße",
   "IND_PRAES_AKT_S_2" : "du grüßt",
   "IND_PRAES_AKT_S_3" : "er/sie/es grüßt",
@@ -14824,6 +14960,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gegrüßt worden sein"
 }, {
   "Infinitiv" : "gucken",
+  "PP" : "geguckt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich gucke",
   "IND_PRAES_AKT_S_2" : "du guckst",
   "IND_PRAES_AKT_S_3" : "er/sie/es guckt",
@@ -15042,6 +15180,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geguckt worden sein"
 }, {
   "Infinitiv" : "halten",
+  "PP" : "gehalten",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich halte",
   "IND_PRAES_AKT_S_2" : "du hältst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hält",
@@ -15260,6 +15400,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehalten worden sein"
 }, {
   "Infinitiv" : "hängen",
+  "PP" : "gehangen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich hänge",
   "IND_PRAES_AKT_S_2" : "du hängst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hängt",
@@ -15478,6 +15620,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehangen worden sein"
 }, {
   "Infinitiv" : "hassen",
+  "PP" : "hehasst",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich hasse",
   "IND_PRAES_AKT_S_2" : "du hasst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hasst",
@@ -15696,6 +15840,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden hehasst worden sein"
 }, {
   "Infinitiv" : "heben",
+  "PP" : "gehoben",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich hebe",
   "IND_PRAES_AKT_S_2" : "du hebst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hebt",
@@ -15914,6 +16060,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehoben worden sein"
 }, {
   "Infinitiv" : "heiraten",
+  "PP" : "geheiratet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich heirate",
   "IND_PRAES_AKT_S_2" : "du heiratest",
   "IND_PRAES_AKT_S_3" : "er/sie/es heiratet",
@@ -16132,6 +16280,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geheiratet worden sein"
 }, {
   "Infinitiv" : "heißen",
+  "PP" : "geheißen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich heiße",
   "IND_PRAES_AKT_S_2" : "du heißt",
   "IND_PRAES_AKT_S_3" : "er/sie/es heißt",
@@ -16350,6 +16500,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geheißen worden sein"
 }, {
   "Infinitiv" : "helfen",
+  "PP" : "geholfen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich helfe",
   "IND_PRAES_AKT_S_2" : "du hilfst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hilft",
@@ -16568,6 +16720,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geholfen worden sein"
 }, {
   "Infinitiv" : "hoffen",
+  "PP" : "gehofft",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich hoffe",
   "IND_PRAES_AKT_S_2" : "du hoffst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hofft",
@@ -16786,6 +16940,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehofft worden sein"
 }, {
   "Infinitiv" : "holen",
+  "PP" : "geholt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich hole",
   "IND_PRAES_AKT_S_2" : "du holst",
   "IND_PRAES_AKT_S_3" : "er/sie/es holt",
@@ -17004,6 +17160,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geholt worden sein"
 }, {
   "Infinitiv" : "hören",
+  "PP" : "gehört",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich höre",
   "IND_PRAES_AKT_S_2" : "du hörst",
   "IND_PRAES_AKT_S_3" : "er/sie/es hört",
@@ -17222,6 +17380,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gehört worden sein"
 }, {
   "Infinitiv" : "informieren",
+  "PP" : "informiert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich informiere",
   "IND_PRAES_AKT_S_2" : "du informierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es informiert",
@@ -17440,6 +17600,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden informiert worden sein"
 }, {
   "Infinitiv" : "interessieren",
+  "PP" : "interessiert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich interessiere",
   "IND_PRAES_AKT_S_2" : "du interessierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es interessiert",
@@ -17658,6 +17820,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden interessiert worden sein"
 }, {
   "Infinitiv" : "kaufen",
+  "PP" : "gekauft",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich kaufe",
   "IND_PRAES_AKT_S_2" : "du kaufst",
   "IND_PRAES_AKT_S_3" : "er/sie/es kauft",
@@ -17876,6 +18040,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gekauft worden sein"
 }, {
   "Infinitiv" : "kennen",
+  "PP" : "gekannt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich kenne",
   "IND_PRAES_AKT_S_2" : "du kennst",
   "IND_PRAES_AKT_S_3" : "er/sie/es kennt",
@@ -18094,6 +18260,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gekannt worden sein"
 }, {
   "Infinitiv" : "kennenlernen",
+  "PP" : "gelernt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich lerne kennen",
   "IND_PRAES_AKT_S_2" : "du lernest kennen",
   "IND_PRAES_AKT_S_3" : "er/sie/es lernet kennen",
@@ -18312,6 +18480,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelernt worden sein"
 }, {
   "Infinitiv" : "kochen",
+  "PP" : "gekocht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich koche",
   "IND_PRAES_AKT_S_2" : "du kochst",
   "IND_PRAES_AKT_S_3" : "er/sie/es kocht",
@@ -18530,6 +18700,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gekocht worden sein"
 }, {
   "Infinitiv" : "kommen",
+  "PP" : "gekommen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich komme",
   "IND_PRAES_AKT_S_2" : "du kommst",
   "IND_PRAES_AKT_S_3" : "er/sie/es kommt",
@@ -18748,6 +18920,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gekommen worden sein"
 }, {
   "Infinitiv" : "kosten",
+  "PP" : "gekostet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich koste",
   "IND_PRAES_AKT_S_2" : "du kostest",
   "IND_PRAES_AKT_S_3" : "er/sie/es kostet",
@@ -18966,6 +19140,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gekostet worden sein"
 }, {
   "Infinitiv" : "küssen",
+  "PP" : "geküsst",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich küsse",
   "IND_PRAES_AKT_S_2" : "du küsst",
   "IND_PRAES_AKT_S_3" : "er/sie/es küsst",
@@ -19184,6 +19360,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geküsst worden sein"
 }, {
   "Infinitiv" : "lächeln",
+  "PP" : "gelächelt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich lächle",
   "IND_PRAES_AKT_S_2" : "du lächelst",
   "IND_PRAES_AKT_S_3" : "er/sie/es lächelt",
@@ -19402,6 +19580,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelächelt worden sein"
 }, {
   "Infinitiv" : "lachen",
+  "PP" : "gelacht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich lache",
   "IND_PRAES_AKT_S_2" : "du lachst",
   "IND_PRAES_AKT_S_3" : "er/sie/es lacht",
@@ -19620,6 +19800,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelacht worden sein"
 }, {
   "Infinitiv" : "lassen",
+  "PP" : "gelassen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich lasse",
   "IND_PRAES_AKT_S_2" : "du lässt",
   "IND_PRAES_AKT_S_3" : "er/sie/es lässt",
@@ -19838,6 +20020,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelassen worden sein"
 }, {
   "Infinitiv" : "laufen",
+  "PP" : "gelaufen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich laufe",
   "IND_PRAES_AKT_S_2" : "du läufst",
   "IND_PRAES_AKT_S_3" : "er/sie/es läuft",
@@ -20056,6 +20240,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelaufen worden sein"
 }, {
   "Infinitiv" : "leben",
+  "PP" : "gelebt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich lebe",
   "IND_PRAES_AKT_S_2" : "du lebst",
   "IND_PRAES_AKT_S_3" : "er/sie/es lebt",
@@ -20274,6 +20460,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelebt worden sein"
 }, {
   "Infinitiv" : "legen",
+  "PP" : "gelegt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich lege",
   "IND_PRAES_AKT_S_2" : "du legst",
   "IND_PRAES_AKT_S_3" : "er/sie/es legt",
@@ -20492,6 +20680,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelegt worden sein"
 }, {
   "Infinitiv" : "leidtun",
+  "PP" : "getan",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich tue leid",
   "IND_PRAES_AKT_S_2" : "du tust leid",
   "IND_PRAES_AKT_S_3" : "er/sie/es tut leid",
@@ -20710,6 +20900,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getan worden sein"
 }, {
   "Infinitiv" : "lernen",
+  "PP" : "gelernt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich lerne",
   "IND_PRAES_AKT_S_2" : "du lernest",
   "IND_PRAES_AKT_S_3" : "er/sie/es lernet",
@@ -20928,6 +21120,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelernt worden sein"
 }, {
   "Infinitiv" : "lesen",
+  "PP" : "gelesen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich lese",
   "IND_PRAES_AKT_S_2" : "du liest",
   "IND_PRAES_AKT_S_3" : "er/sie/es liest",
@@ -21146,6 +21340,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelesen worden sein"
 }, {
   "Infinitiv" : "lieben",
+  "PP" : "geliebt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich liebe",
   "IND_PRAES_AKT_S_2" : "du liebst",
   "IND_PRAES_AKT_S_3" : "er/sie/es liebt",
@@ -21364,6 +21560,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geliebt worden sein"
 }, {
   "Infinitiv" : "liegen",
+  "PP" : "gelegen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich liege",
   "IND_PRAES_AKT_S_2" : "du liegst",
   "IND_PRAES_AKT_S_3" : "er/sie/es liegt",
@@ -21582,6 +21780,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelegen worden sein"
 }, {
   "Infinitiv" : "lügen",
+  "PP" : "gelogen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich lüge",
   "IND_PRAES_AKT_S_2" : "du lügst",
   "IND_PRAES_AKT_S_3" : "er/sie/es lügt",
@@ -21800,6 +22000,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gelogen worden sein"
 }, {
   "Infinitiv" : "machen",
+  "PP" : "gemacht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich mache",
   "IND_PRAES_AKT_S_2" : "du machst",
   "IND_PRAES_AKT_S_3" : "er/sie/es macht",
@@ -22018,6 +22220,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gemacht worden sein"
 }, {
   "Infinitiv" : "malen",
+  "PP" : "gemalt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich male",
   "IND_PRAES_AKT_S_2" : "du malst",
   "IND_PRAES_AKT_S_3" : "er/sie/es malt",
@@ -22236,6 +22440,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gemalt worden sein"
 }, {
   "Infinitiv" : "meinen",
+  "PP" : "gemeint",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich meine",
   "IND_PRAES_AKT_S_2" : "du meinst",
   "IND_PRAES_AKT_S_3" : "er/sie/es meint",
@@ -22454,6 +22660,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gemeint worden sein"
 }, {
   "Infinitiv" : "mieten",
+  "PP" : "gemietet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich miete",
   "IND_PRAES_AKT_S_2" : "du mietest",
   "IND_PRAES_AKT_S_3" : "er/sie/es mietet",
@@ -22672,6 +22880,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gemietet worden sein"
 }, {
   "Infinitiv" : "nehmen",
+  "PP" : "genommen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich nehme",
   "IND_PRAES_AKT_S_2" : "du nimmst",
   "IND_PRAES_AKT_S_3" : "er/sie/es nimmt",
@@ -22890,6 +23100,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden genommen worden sein"
 }, {
   "Infinitiv" : "öffnen",
+  "PP" : "geöffnet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich öffne",
   "IND_PRAES_AKT_S_2" : "du öffnest",
   "IND_PRAES_AKT_S_3" : "er/sie/es öffnet",
@@ -23108,6 +23320,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geöffnet worden sein"
 }, {
   "Infinitiv" : "packen",
+  "PP" : "gepackt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich packe",
   "IND_PRAES_AKT_S_2" : "du packst",
   "IND_PRAES_AKT_S_3" : "er/sie/es packt",
@@ -23326,6 +23540,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gepackt worden sein"
 }, {
   "Infinitiv" : "passen",
+  "PP" : "gepasst",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich passe",
   "IND_PRAES_AKT_S_2" : "du passt",
   "IND_PRAES_AKT_S_3" : "er/sie/es passt",
@@ -23544,6 +23760,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gepasst worden sein"
 }, {
   "Infinitiv" : "passieren",
+  "PP" : "passiert",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich passiere",
   "IND_PRAES_AKT_S_2" : "du passierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es passiert",
@@ -23762,6 +23980,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden passiert worden sein"
 }, {
   "Infinitiv" : "probieren",
+  "PP" : "probiert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich probiere",
   "IND_PRAES_AKT_S_2" : "du probierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es probiert",
@@ -23980,6 +24200,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden probiert worden sein"
 }, {
   "Infinitiv" : "putzen",
+  "PP" : "geputzt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich putze",
   "IND_PRAES_AKT_S_2" : "du putzt",
   "IND_PRAES_AKT_S_3" : "er/sie/es putzt",
@@ -24198,6 +24420,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geputzt worden sein"
 }, {
   "Infinitiv" : "rauchen",
+  "PP" : "geraucht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich rauche",
   "IND_PRAES_AKT_S_2" : "du rauchst",
   "IND_PRAES_AKT_S_3" : "er/sie/es raucht",
@@ -24416,6 +24640,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geraucht worden sein"
 }, {
   "Infinitiv" : "reden",
+  "PP" : "geredet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich rede",
   "IND_PRAES_AKT_S_2" : "du redest",
   "IND_PRAES_AKT_S_3" : "er/sie/es redet",
@@ -24634,6 +24860,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geredet worden sein"
 }, {
   "Infinitiv" : "regnen",
+  "PP" : "geregnet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich regne",
   "IND_PRAES_AKT_S_2" : "du regnest",
   "IND_PRAES_AKT_S_3" : "er/sie/es regnet",
@@ -24852,6 +25080,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geregnet worden sein"
 }, {
   "Infinitiv" : "reisen",
+  "PP" : "gereist",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich reise",
   "IND_PRAES_AKT_S_2" : "du reist",
   "IND_PRAES_AKT_S_3" : "er/sie/es reist",
@@ -25070,6 +25300,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gereist worden sein"
 }, {
   "Infinitiv" : "rennen",
+  "PP" : "gerannt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich renne",
   "IND_PRAES_AKT_S_2" : "du rennst",
   "IND_PRAES_AKT_S_3" : "er/sie/es rennt",
@@ -25288,6 +25520,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gerannt worden sein"
 }, {
   "Infinitiv" : "reparieren",
+  "PP" : "repariert",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich repariere",
   "IND_PRAES_AKT_S_2" : "du reparierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es repariert",
@@ -25506,6 +25740,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden repariert worden sein"
 }, {
   "Infinitiv" : "riechen",
+  "PP" : "gerochen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich riechene",
   "IND_PRAES_AKT_S_2" : "du riechenst",
   "IND_PRAES_AKT_S_3" : "er/sie/es riechent",
@@ -25724,6 +25960,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gerochen worden sein"
 }, {
   "Infinitiv" : "rufen",
+  "PP" : "gerufen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich rufe",
   "IND_PRAES_AKT_S_2" : "du rufst",
   "IND_PRAES_AKT_S_3" : "er/sie/es ruft",
@@ -25942,6 +26180,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gerufen worden sein"
 }, {
   "Infinitiv" : "sagen",
+  "PP" : "gesagt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich sage",
   "IND_PRAES_AKT_S_2" : "du sagst",
   "IND_PRAES_AKT_S_3" : "er/sie/es sagt",
@@ -26160,6 +26400,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesagt worden sein"
 }, {
   "Infinitiv" : "schaffen",
+  "PP" : "geschafft",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schaffe",
   "IND_PRAES_AKT_S_2" : "du schaffst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schafft",
@@ -26378,6 +26620,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschafft worden sein"
 }, {
   "Infinitiv" : "scheinen",
+  "PP" : "geschienen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich scheine",
   "IND_PRAES_AKT_S_2" : "du scheinst",
   "IND_PRAES_AKT_S_3" : "er/sie/es scheint",
@@ -26596,6 +26840,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschienen worden sein"
 }, {
   "Infinitiv" : "schenken",
+  "PP" : "geschenkt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schenke",
   "IND_PRAES_AKT_S_2" : "du schenkst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schenkt",
@@ -26814,6 +27060,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschenkt worden sein"
 }, {
   "Infinitiv" : "schicken",
+  "PP" : "geschickt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schicke",
   "IND_PRAES_AKT_S_2" : "du schickst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schickt",
@@ -27032,6 +27280,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschickt worden sein"
 }, {
   "Infinitiv" : "schieben",
+  "PP" : "geschoben",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schiebe",
   "IND_PRAES_AKT_S_2" : "du schiebst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schiebt",
@@ -27250,6 +27500,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschoben worden sein"
 }, {
   "Infinitiv" : "schießen",
+  "PP" : "geschossen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schieße",
   "IND_PRAES_AKT_S_2" : "du schießt",
   "IND_PRAES_AKT_S_3" : "er/sie/es schießt",
@@ -27468,6 +27720,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschossen worden sein"
 }, {
   "Infinitiv" : "schlafen",
+  "PP" : "geschlafen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schlafe",
   "IND_PRAES_AKT_S_2" : "du schläfst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schläft",
@@ -27686,6 +27940,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschlafen worden sein"
 }, {
   "Infinitiv" : "schlagen",
+  "PP" : "geschlagen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schlagene",
   "IND_PRAES_AKT_S_2" : "du schlägst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schlägt",
@@ -27904,6 +28160,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschlagen worden sein"
 }, {
   "Infinitiv" : "schließen",
+  "PP" : "geschlossen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schließene",
   "IND_PRAES_AKT_S_2" : "du schließenst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schließent",
@@ -28122,6 +28380,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschlossen worden sein"
 }, {
   "Infinitiv" : "schmecken",
+  "PP" : "geschmeckt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schmecke",
   "IND_PRAES_AKT_S_2" : "du schmeckst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schmeckt",
@@ -28340,6 +28600,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschmeckt worden sein"
 }, {
   "Infinitiv" : "schneien",
+  "PP" : "geschneit",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schneie",
   "IND_PRAES_AKT_S_2" : "du schneist",
   "IND_PRAES_AKT_S_3" : "er/sie/es schneit",
@@ -28558,6 +28820,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschneit worden sein"
 }, {
   "Infinitiv" : "schneiden",
+  "PP" : "geschnitten",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schneide",
   "IND_PRAES_AKT_S_2" : "du schneidest",
   "IND_PRAES_AKT_S_3" : "er/sie/es schneidet",
@@ -28776,6 +29040,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschnitten worden sein"
 }, {
   "Infinitiv" : "schreiben",
+  "PP" : "geschrieben",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich schreibe",
   "IND_PRAES_AKT_S_2" : "du schreibst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schreibt",
@@ -28994,6 +29260,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschrieben worden sein"
 }, {
   "Infinitiv" : "schreien",
+  "PP" : "geschrieen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schreie",
   "IND_PRAES_AKT_S_2" : "du schreist",
   "IND_PRAES_AKT_S_3" : "er/sie/es schreit",
@@ -29212,6 +29480,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschrieen worden sein"
 }, {
   "Infinitiv" : "schwimmen",
+  "PP" : "geschwommen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich schwimme",
   "IND_PRAES_AKT_S_2" : "du schwimmst",
   "IND_PRAES_AKT_S_3" : "er/sie/es schwimmt",
@@ -29430,6 +29700,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geschwommen worden sein"
 }, {
   "Infinitiv" : "sehen",
+  "PP" : "gesehen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich sehe",
   "IND_PRAES_AKT_S_2" : "du siehst",
   "IND_PRAES_AKT_S_3" : "er/sie/es sieht",
@@ -29648,6 +29920,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesehen worden sein"
 }, {
   "Infinitiv" : "senden",
+  "PP" : "gesandt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich sende",
   "IND_PRAES_AKT_S_2" : "du sendest",
   "IND_PRAES_AKT_S_3" : "er/sie/es sendet",
@@ -29866,6 +30140,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesandt worden sein"
 }, {
   "Infinitiv" : "setzen",
+  "PP" : "gesetzt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich setze",
   "IND_PRAES_AKT_S_2" : "du setzt",
   "IND_PRAES_AKT_S_3" : "er/sie/es setzt",
@@ -30084,6 +30360,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesetzt worden sein"
 }, {
   "Infinitiv" : "singen",
+  "PP" : "gesungen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich singe",
   "IND_PRAES_AKT_S_2" : "du singst",
   "IND_PRAES_AKT_S_3" : "er/sie/es singt",
@@ -30302,6 +30580,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesungen worden sein"
 }, {
   "Infinitiv" : "sitzen",
+  "PP" : "gesessen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich sitze",
   "IND_PRAES_AKT_S_2" : "du sitzt",
   "IND_PRAES_AKT_S_3" : "er/sie/es sitzt",
@@ -30520,6 +30800,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesessen worden sein"
 }, {
   "Infinitiv" : "spielen",
+  "PP" : "gespielt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich spiele",
   "IND_PRAES_AKT_S_2" : "du spielst",
   "IND_PRAES_AKT_S_3" : "er/sie/es spielt",
@@ -30738,6 +31020,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gespielt worden sein"
 }, {
   "Infinitiv" : "sprechen",
+  "PP" : "gesprochen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich spreche",
   "IND_PRAES_AKT_S_2" : "du sprichst",
   "IND_PRAES_AKT_S_3" : "er/sie/es spricht",
@@ -30956,6 +31240,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesprochen worden sein"
 }, {
   "Infinitiv" : "springen",
+  "PP" : "gesprungen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich springe",
   "IND_PRAES_AKT_S_2" : "du springst",
   "IND_PRAES_AKT_S_3" : "er/sie/es springt",
@@ -31174,6 +31460,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesprungen worden sein"
 }, {
   "Infinitiv" : "stecken",
+  "PP" : "gesteckt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich stecke",
   "IND_PRAES_AKT_S_2" : "du steckst",
   "IND_PRAES_AKT_S_3" : "er/sie/es steckt",
@@ -31392,6 +31680,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesteckt worden sein"
 }, {
   "Infinitiv" : "stehen",
+  "PP" : "gestanden",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich stehe",
   "IND_PRAES_AKT_S_2" : "du stehst",
   "IND_PRAES_AKT_S_3" : "er/sie/es steht",
@@ -31610,6 +31900,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestanden worden sein"
 }, {
   "Infinitiv" : "stehlen",
+  "PP" : "gestohlen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich stehle",
   "IND_PRAES_AKT_S_2" : "du stiehlst",
   "IND_PRAES_AKT_S_3" : "er/sie/es stiehlt",
@@ -31828,6 +32120,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestohlen worden sein"
 }, {
   "Infinitiv" : "stellen",
+  "PP" : "gestellt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich stelle",
   "IND_PRAES_AKT_S_2" : "du stellst",
   "IND_PRAES_AKT_S_3" : "er/sie/es stellt",
@@ -32046,6 +32340,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestellt worden sein"
 }, {
   "Infinitiv" : "sterben",
+  "PP" : "gestorben",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich sterbe",
   "IND_PRAES_AKT_S_2" : "du stirbst",
   "IND_PRAES_AKT_S_3" : "er/sie/es stirbt",
@@ -32264,6 +32560,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestorben worden sein"
 }, {
   "Infinitiv" : "stören",
+  "PP" : "gestört",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich störe",
   "IND_PRAES_AKT_S_2" : "du störst",
   "IND_PRAES_AKT_S_3" : "er/sie/es stört",
@@ -32482,6 +32780,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestört worden sein"
 }, {
   "Infinitiv" : "streichen",
+  "PP" : "gestrichen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich streiche",
   "IND_PRAES_AKT_S_2" : "du streichst",
   "IND_PRAES_AKT_S_3" : "er/sie/es streicht",
@@ -32700,6 +33000,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestrichen worden sein"
 }, {
   "Infinitiv" : "streiten",
+  "PP" : "gestritten",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich streite",
   "IND_PRAES_AKT_S_2" : "du streitest",
   "IND_PRAES_AKT_S_3" : "er/sie/es streitet",
@@ -32918,6 +33220,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gestritten worden sein"
 }, {
   "Infinitiv" : "studieren",
+  "PP" : "studiert",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich studiere",
   "IND_PRAES_AKT_S_2" : "du studierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es studiert",
@@ -33136,6 +33440,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden studiert worden sein"
 }, {
   "Infinitiv" : "suchen",
+  "PP" : "gesucht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich suche",
   "IND_PRAES_AKT_S_2" : "du suchst",
   "IND_PRAES_AKT_S_3" : "er/sie/es sucht",
@@ -33354,6 +33660,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gesucht worden sein"
 }, {
   "Infinitiv" : "tanzen",
+  "PP" : "getanzt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich tanze",
   "IND_PRAES_AKT_S_2" : "du tanzt",
   "IND_PRAES_AKT_S_3" : "er/sie/es tanzt",
@@ -33572,6 +33880,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getanzt worden sein"
 }, {
   "Infinitiv" : "teilen",
+  "PP" : "geteilt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich teile",
   "IND_PRAES_AKT_S_2" : "du teilst",
   "IND_PRAES_AKT_S_3" : "er/sie/es teilt",
@@ -33790,6 +34100,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geteilt worden sein"
 }, {
   "Infinitiv" : "tragen",
+  "PP" : "getragen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich trage",
   "IND_PRAES_AKT_S_2" : "du trägst",
   "IND_PRAES_AKT_S_3" : "er/sie/es trägt",
@@ -34008,6 +34320,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getragen worden sein"
 }, {
   "Infinitiv" : "träumen",
+  "PP" : "geträumt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich träume",
   "IND_PRAES_AKT_S_2" : "du träumst",
   "IND_PRAES_AKT_S_3" : "er/sie/es träumt",
@@ -34226,6 +34540,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geträumt worden sein"
 }, {
   "Infinitiv" : "treffen",
+  "PP" : "getroffen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich treffe",
   "IND_PRAES_AKT_S_2" : "du triffst",
   "IND_PRAES_AKT_S_3" : "er/sie/es trifft",
@@ -34444,6 +34760,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getroffen worden sein"
 }, {
   "Infinitiv" : "trinken",
+  "PP" : "getrunken",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich trinke",
   "IND_PRAES_AKT_S_2" : "du trinkst",
   "IND_PRAES_AKT_S_3" : "er/sie/es trinkt",
@@ -34662,6 +34980,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getrunken worden sein"
 }, {
   "Infinitiv" : "tun",
+  "PP" : "getan",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich tue",
   "IND_PRAES_AKT_S_2" : "du tust",
   "IND_PRAES_AKT_S_3" : "er/sie/es tut",
@@ -34880,6 +35200,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden getan worden sein"
 }, {
   "Infinitiv" : "verabschieden",
+  "PP" : "verabschiedet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verabschiede",
   "IND_PRAES_AKT_S_2" : "du verabschiedest",
   "IND_PRAES_AKT_S_3" : "er/sie/es verabschiedet",
@@ -35098,6 +35420,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verabschiedet worden sein"
 }, {
   "Infinitiv" : "verbieten",
+  "PP" : "verboten",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verbiete",
   "IND_PRAES_AKT_S_2" : "du verbietest",
   "IND_PRAES_AKT_S_3" : "er/sie/es verbietet",
@@ -35316,6 +35640,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verboten worden sein"
 }, {
   "Infinitiv" : "verdienen",
+  "PP" : "verdient",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verdiene",
   "IND_PRAES_AKT_S_2" : "du verdienst",
   "IND_PRAES_AKT_S_3" : "er/sie/es verdient",
@@ -35534,6 +35860,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verdient worden sein"
 }, {
   "Infinitiv" : "vergessen",
+  "PP" : "vergessen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich vergesse",
   "IND_PRAES_AKT_S_2" : "du vergisst",
   "IND_PRAES_AKT_S_3" : "er/sie/es vergisst",
@@ -35752,6 +36080,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden vergessen worden sein"
 }, {
   "Infinitiv" : "vergleichen",
+  "PP" : "verglichen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich vergleiche",
   "IND_PRAES_AKT_S_2" : "du vergleichst",
   "IND_PRAES_AKT_S_3" : "er/sie/es vergleicht",
@@ -35970,6 +36300,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verglichen worden sein"
 }, {
   "Infinitiv" : "verkaufen",
+  "PP" : "verkauft",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verkaufe",
   "IND_PRAES_AKT_S_2" : "du verkaufst",
   "IND_PRAES_AKT_S_3" : "er/sie/es verkauft",
@@ -36188,6 +36520,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verkauft worden sein"
 }, {
   "Infinitiv" : "verlieren",
+  "PP" : "verloren",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verliere",
   "IND_PRAES_AKT_S_2" : "du verlierst",
   "IND_PRAES_AKT_S_3" : "er/sie/es verliert",
@@ -36406,6 +36740,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verloren worden sein"
 }, {
   "Infinitiv" : "vermieten",
+  "PP" : "vermietet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich vermiete",
   "IND_PRAES_AKT_S_2" : "du vermietest",
   "IND_PRAES_AKT_S_3" : "er/sie/es vermietet",
@@ -36624,6 +36960,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden vermietet worden sein"
 }, {
   "Infinitiv" : "vermissen",
+  "PP" : "vermisst",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich vermisse",
   "IND_PRAES_AKT_S_2" : "du vermisst",
   "IND_PRAES_AKT_S_3" : "er/sie/es vermisst",
@@ -36842,6 +37180,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden vermisst worden sein"
 }, {
   "Infinitiv" : "verstecken",
+  "PP" : "versteckt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verstecke",
   "IND_PRAES_AKT_S_2" : "du versteckst",
   "IND_PRAES_AKT_S_3" : "er/sie/es versteckt",
@@ -37060,6 +37400,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden versteckt worden sein"
 }, {
   "Infinitiv" : "verstehen",
+  "PP" : "verstanden",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich verstehe",
   "IND_PRAES_AKT_S_2" : "du verstehst",
   "IND_PRAES_AKT_S_3" : "er/sie/es versteht",
@@ -37278,6 +37620,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden verstanden worden sein"
 }, {
   "Infinitiv" : "versuchen",
+  "PP" : "versucht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich versuche",
   "IND_PRAES_AKT_S_2" : "du versuchst",
   "IND_PRAES_AKT_S_3" : "er/sie/es versucht",
@@ -37496,6 +37840,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden versucht worden sein"
 }, {
   "Infinitiv" : "vorbereiten",
+  "PP" : "vorbereitet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich bereite vor",
   "IND_PRAES_AKT_S_2" : "du bereitest vor",
   "IND_PRAES_AKT_S_3" : "er/sie/es bereitet vor",
@@ -37714,6 +38060,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden vorbereitet worden sein"
 }, {
   "Infinitiv" : "vorstellen",
+  "PP" : "vorgestellt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich stelle vor",
   "IND_PRAES_AKT_S_2" : "du stellst vor",
   "IND_PRAES_AKT_S_3" : "er/sie/es stellt vor",
@@ -37932,6 +38280,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden vorgestellt worden sein"
 }, {
   "Infinitiv" : "wachsen",
+  "PP" : "gewachsen",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich wachse",
   "IND_PRAES_AKT_S_2" : "du wächst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wächst",
@@ -38150,6 +38500,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewachsen worden sein"
 }, {
   "Infinitiv" : "wählen",
+  "PP" : "gewählt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich wähle",
   "IND_PRAES_AKT_S_2" : "du wählst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wählt",
@@ -38368,6 +38720,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewählt worden sein"
 }, {
   "Infinitiv" : "warten",
+  "PP" : "gewartet",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich warte",
   "IND_PRAES_AKT_S_2" : "du wartest",
   "IND_PRAES_AKT_S_3" : "er/sie/es wartet",
@@ -38586,6 +38940,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewartet worden sein"
 }, {
   "Infinitiv" : "waschen",
+  "PP" : "gewaschen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich wasche",
   "IND_PRAES_AKT_S_2" : "du wäschst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wäscht",
@@ -38804,6 +39160,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewaschen worden sein"
 }, {
   "Infinitiv" : "wecken",
+  "PP" : "geweckt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich wecke",
   "IND_PRAES_AKT_S_2" : "du weckst",
   "IND_PRAES_AKT_S_3" : "er/sie/es weckt",
@@ -39022,6 +39380,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geweckt worden sein"
 }, {
   "Infinitiv" : "wehtun",
+  "PP" : "wehgetan",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich tue weh",
   "IND_PRAES_AKT_S_2" : "du tust weh",
   "IND_PRAES_AKT_S_3" : "er/sie/es tut weh",
@@ -39240,6 +39600,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden wehgetan worden sein"
 }, {
   "Infinitiv" : "weinen",
+  "PP" : "geweint",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich weine",
   "IND_PRAES_AKT_S_2" : "du weinst",
   "IND_PRAES_AKT_S_3" : "er/sie/es weint",
@@ -39458,6 +39820,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geweint worden sein"
 }, {
   "Infinitiv" : "werfen",
+  "PP" : "geworfen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich werfe",
   "IND_PRAES_AKT_S_2" : "du wirfst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wirft",
@@ -39676,6 +40040,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden geworfen worden sein"
 }, {
   "Infinitiv" : "wiederholen",
+  "PP" : "wiederholt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich wiederhole",
   "IND_PRAES_AKT_S_2" : "du wiederholst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wiederholt",
@@ -39894,6 +40260,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden wiederholt worden sein"
 }, {
   "Infinitiv" : "wohnen",
+  "PP" : "gewohnt",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich wohne",
   "IND_PRAES_AKT_S_2" : "du wohnst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wohnt",
@@ -40112,6 +40480,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewohnt worden sein"
 }, {
   "Infinitiv" : "wünschen",
+  "PP" : "gewünscht",
+  "transitiv" : 0,
   "IND_PRAES_AKT_S_1" : "ich wünsche",
   "IND_PRAES_AKT_S_2" : "du wünschst",
   "IND_PRAES_AKT_S_3" : "er/sie/es wünscht",
@@ -40330,6 +40700,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gewünscht worden sein"
 }, {
   "Infinitiv" : "zählen",
+  "PP" : "gezählt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich zähle",
   "IND_PRAES_AKT_S_2" : "du zählst",
   "IND_PRAES_AKT_S_3" : "er/sie/es zählt",
@@ -40548,6 +40920,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gezählt worden sein"
 }, {
   "Infinitiv" : "zeichnen",
+  "PP" : "gezeichnet",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich zeichne",
   "IND_PRAES_AKT_S_2" : "du zeichnst",
   "IND_PRAES_AKT_S_3" : "er/sie/es zeichnt",
@@ -40766,6 +41140,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gezeichnet worden sein"
 }, {
   "Infinitiv" : "zeigen",
+  "PP" : "gezeigt",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich zeige",
   "IND_PRAES_AKT_S_2" : "du zeigst",
   "IND_PRAES_AKT_S_3" : "er/sie/es zeigt",
@@ -40984,6 +41360,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gezeigt worden sein"
 }, {
   "Infinitiv" : "ziehen",
+  "PP" : "gezogen",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich ziehe",
   "IND_PRAES_AKT_S_2" : "du ziehst",
   "IND_PRAES_AKT_S_3" : "er/sie/es zieht",
@@ -41202,6 +41580,8 @@
   "KONJ2_FUT2_PASS_P_3" : "sie würden gezogen worden sein"
 }, {
   "Infinitiv" : "zumachen",
+  "PP" : "zugemacht",
+  "transitiv" : 1,
   "IND_PRAES_AKT_S_1" : "ich mache zu",
   "IND_PRAES_AKT_S_2" : "du machst zu",
   "IND_PRAES_AKT_S_3" : "er/sie/es macht zu",

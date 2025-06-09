@@ -156,3 +156,31 @@ footer {
     border: 2px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+/* Navigation controls styling */
+.controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button, #settings-gear {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+    color: #333;
+}
+
+.nav-button:hover:not(:disabled), #settings-gear:hover {
+    color: #000;
+}
+
+.nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
